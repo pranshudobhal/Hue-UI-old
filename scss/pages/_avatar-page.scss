@@ -1,0 +1,31 @@
+.main {
+  text-align: left;
+
+  &-topic {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid $border-color;
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.6;
+    }
+  }
+
+  &-content {
+    &__box {
+      padding: 2rem 1rem;
+
+      .box-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        opacity: 0.9;
+      }
+    }
+  }
+}
