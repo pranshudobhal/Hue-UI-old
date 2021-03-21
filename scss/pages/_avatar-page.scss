@@ -21,11 +21,45 @@
     &__box {
       padding: 2rem 1rem;
 
-      .box-heading {
-        font-size: 1.5rem;
-        font-weight: 700;
-        opacity: 0.9;
+      .box {
+        &-heading {
+          font-size: 1.5rem;
+          font-weight: 700;
+          opacity: 0.9;
+        }
+
+        &-description {
+          font-size: 1rem;
+          opacity: 0.8;
+          margin-bottom: 2rem;
+
+          code {
+            font-size: 0.875rem;
+            color: #d63384;
+            word-wrap: break-word;
+            padding-right: 0.25rem;
+          }
+        }
+      }
+
+      .avatar-default {
+        margin-bottom: 2rem;
       }
     }
+  }
+}
+
+.avatar-sizes {
+  display: flex;
+  justify-content: flex-start;
+  width: 90vw;
+  margin: 0 auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 1.5rem;
   }
 }

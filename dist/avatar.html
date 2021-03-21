@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
 
-    <title>Avatar | Hue UI</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo"><a href="./index.html">HUE</a></div>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/563px-RGB_color_wheel_360.svg.png">
+  <link rel="stylesheet" href="./css/main.css" />
 
-      <nav class="nav">
-        <ul class="menu-nav">
-          <li class="menu-nav__item active">
-            <a href="avatar.html" class="menu-nav__link"> Avatar </a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="alert.html" class="menu-nav__link"> Alert </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="main-topic">
-        <h1>Avatar</h1>
-        <h4>The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.</h4>
-      </div>
-      <div class="main-content">
-        <div class="main-content__box">
-          <div class="box-heading">Avatar Sizes</div>
-          <div class="box-description">The Avatar component comes in 3 sizes. Select small, medium and large to switch between sizes</div>
+  <title>Avatar | Hue UI</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><a href="./index.html">HUE</a></div>
+    <div class="menu-btn">
+      <span class="menu-btn__burger"></span>
+    </div>
+
+    <nav class="nav">
+      <ul class="menu-nav">
+        <li class="menu-nav__item active">
+          <a href="avatar.html" class="menu-nav__link"> Avatar </a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="alert.html" class="menu-nav__link"> Alert </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main-topic">
+      <h1>Avatar</h1>
+      <h4>The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.
+      </h4>
+    </div>
+    <div class="main-content">
+      <div class="main-content__box">
+        <div class="box-heading">Usage</div>
+        <div class="box-description">Avatars in their simplest form display content within a circular container.
+        </div>
+        <div class="avatar-default">
+          <div>
+            <img src="./img/img_avatar.png" class="avatar" alt="avatar-small">
+          </div>
+        </div>
+
+        <div class="box-heading">Sizes</div>
+        <div class="box-description">Want more control over your avatars? Add <code>.avatar-sm</code> or
+          <code>.avatar-md</code> or
+          <code>.avatar-lg</code> for additional sizes.
+        </div>
+        <div class="avatar-sizes">
+          <div>
+            <img src="./img/img_avatar.png" class="avatar avatar-sm" alt="avatar-small">
+          </div>
+          <div>
+            <img src="./img/img_avatar.png" class="avatar avatar-md" alt="avatar-medium">
+          </div>
+          <div>
+            <img src="./img/img_avatar.png" class="avatar avatar-lg" alt="avatar-large">
+          </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <script src="./js/app.js"></script>
-  </body>
+
+  <script src="./js/app.js"></script>
+</body>
+
 </html>

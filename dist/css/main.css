@@ -179,6 +179,27 @@ body {
   transition-delay: 0.55s;
 }
 
+.avatar {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.avatar-sm {
+  height: 4rem;
+  width: 4rem;
+}
+
+.avatar-md {
+  height: 6rem;
+  width: 6rem;
+}
+
+.avatar-lg {
+  height: 8rem;
+  width: 8rem;
+}
+
 .main {
   text-align: left;
 }
@@ -208,5 +229,37 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   opacity: 0.9;
+}
+
+.main-content__box .box-description {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.main-content__box .box-description code {
+  font-size: 0.875rem;
+  color: #d63384;
+  word-wrap: break-word;
+  padding-right: 0.25rem;
+}
+
+.main-content__box .avatar-default {
+  margin-bottom: 2rem;
+}
+
+.avatar-sizes {
+  display: flex;
+  justify-content: flex-start;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.avatar-sizes div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-right: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
