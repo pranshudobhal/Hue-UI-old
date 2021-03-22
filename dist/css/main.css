@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +24,7 @@ header {
   height: 8vh;
   background-color: #272727;
   color: #fff;
+  z-index: 999;
 }
 
 body {
@@ -185,19 +189,85 @@ body {
   width: 5rem;
 }
 
-.avatar-sm {
+.avatar.avatar-sm {
   height: 4rem;
   width: 4rem;
 }
 
-.avatar-md {
+.avatar.avatar-md {
   height: 6rem;
   width: 6rem;
 }
 
-.avatar-lg {
+.avatar.avatar-lg {
   height: 8rem;
   width: 8rem;
+}
+
+.alert {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1rem;
+}
+
+.alert.alert-error {
+  color: #611a15;
+  background-color: #fdecea;
+}
+
+.alert.alert-error span:first-child {
+  color: #f44336;
+  margin-right: 1rem;
+}
+
+.alert.alert-warning {
+  color: #663c00;
+  background-color: #fff4e5;
+}
+
+.alert.alert-warning span:first-child {
+  color: #ff9800;
+  margin-right: 1rem;
+}
+
+.alert.alert-info {
+  color: #0d3c61;
+  background-color: #e8f4fd;
+}
+
+.alert.alert-info span:first-child {
+  color: #2196f3;
+  margin-right: 1rem;
+}
+
+.alert.alert-success {
+  color: #1e4620;
+  background-color: #edf7ed;
+}
+
+.alert.alert-success span:first-child {
+  color: #4caf50;
+  margin-right: 1rem;
+}
+
+.badge-container {
+  position: relative;
+}
+
+.status-online {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  background-color: green;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  bottom: 0.25rem;
+  right: 1rem;
 }
 
 .main {
@@ -251,7 +321,6 @@ body {
 .avatar-sizes {
   display: flex;
   justify-content: flex-start;
-  width: 90vw;
   margin: 0 auto;
 }
 
@@ -259,7 +328,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-self: flex-end;
   text-align: center;
-  padding-right: 1.5rem;
+  margin-right: 1rem;
+}
+
+.display-code {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

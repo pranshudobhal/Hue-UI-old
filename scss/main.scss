@@ -11,14 +11,14 @@
 // @import 'layout/sidebar';
 // @import 'layout/forms';
 
-// @import 'components/buttons';
-// @import 'components/carousel';
-// @import 'components/slider';
-@import './components/avatar';
+@import 'components/avatar';
+@import 'components/alert';
+@import 'components/badge';
 
-@import './pages/avatar-page';
 @import 'pages/index';
 @import 'pages/getting-started';
-// @import 'pages/contact';
+@import 'pages/avatar-page';
+@import 'pages/alert-page';
+@import 'pages/badge-page';
 
 // @import 'theme/theme';

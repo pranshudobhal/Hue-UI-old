@@ -2,19 +2,19 @@
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
-}
 
-.avatar-sm {
-  height: 4rem;
-  width: 4rem;
-}
+  &#{&}-sm {
+    height: 4rem;
+    width: 4rem;
+  }
 
-.avatar-md {
-  height: 6rem;
-  width: 6rem;
-}
+  &#{&}-md {
+    height: 6rem;
+    width: 6rem;
+  }
 
-.avatar-lg {
-  height: 8rem;
-  width: 8rem;
+  &#{&}-lg {
+    height: 8rem;
+    width: 8rem;
+  }
 }
