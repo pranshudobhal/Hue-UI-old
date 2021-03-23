@@ -67,4 +67,9 @@
 .display-code {
   margin-top: 2rem;
   margin-bottom: 4rem;
+  max-width: 375px;
+
+  iframe {
+    max-width: 100%;
+  }
 }

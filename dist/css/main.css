@@ -27,6 +27,38 @@ header {
   z-index: 999;
 }
 
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
 body {
   font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.4;
@@ -255,19 +287,83 @@ body {
   margin-right: 1rem;
 }
 
-.badge-container {
+.badge {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  text-align: center;
+  margin-right: 1rem;
 }
 
-.status-online {
-  width: 1.25rem;
-  height: 1.25rem;
+.badge-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.badge-avatar {
+  width: 20%;
+  height: 20%;
   position: absolute;
-  background-color: green;
   border-radius: 50%;
   border: 2px solid #fff;
-  bottom: 0.25rem;
-  right: 1rem;
+  bottom: 4%;
+  right: 6%;
+  background-color: #272727;
+}
+
+.badge-avatar.status-online {
+  background-color: #1b7052;
+}
+
+.badge-avatar.status-away {
+  background-color: #f9a61a;
+}
+
+.badge-avatar.status-away::after {
+  content: '';
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.badge-avatar.status-dnd {
+  background-color: #f34648;
+}
+
+.badge-avatar.status-dnd::after {
+  content: '';
+  position: absolute;
+  width: 65%;
+  height: 20%;
+  background-color: #212121;
+  border-radius: 2px;
+  top: 45%;
+  left: 15%;
+}
+
+.badge-icon {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+
+.badge-icon.number {
+  position: absolute;
+  font-size: 0.75em;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #ff3f6c;
+  color: #fff;
+  top: 0;
+  right: -15%;
 }
 
 .main {
@@ -336,6 +432,11 @@ body {
 .display-code {
   margin-top: 2rem;
   margin-bottom: 4rem;
+  max-width: 375px;
+}
+
+.display-code iframe {
+  max-width: 100%;
 }
 
 .alerts {
