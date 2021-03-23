@@ -21,10 +21,13 @@ a {
 header {
   position: sticky;
   top: 0;
-  height: 8vh;
+  height: auto;
+  min-height: 8vh;
   background-color: #272727;
   color: #fff;
   z-index: 999;
+  display: flex;
+  justify-content: space-between;
 }
 
 .material-icons.md-18 {
@@ -62,6 +65,12 @@ header {
 body {
   font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.4;
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  align-self: center;
 }
 
 .menu-btn {
@@ -160,7 +169,7 @@ body {
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #ff3f6c;
 }
 
 .nav .menu-nav__link {
@@ -173,7 +182,7 @@ body {
 }
 
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: #ff3f6c;
 }
 
 @media screen and (min-width: 768px) {
@@ -387,8 +396,8 @@ body {
 }
 
 .btn:hover {
-  color: rgba(0, 0, 0, 0.87);
-  box-shadow: 0px 3px 1px -2px RGB(0 0 0/20%), 0px 2px 2px 0px RGB(0 0 0/14%), 0px 1px 5px 0px RGB(0 0 0/12%);
+  background-color: #d5d5d5;
+  box-shadow: 0px 2px 4px -1px RGB(0 0 0/20%), 0px 4px 5px 0px RGB(0 0 0/14%), 0px 1px 10px 0px RGB(0 0 0/12%);
 }
 
 .btn.btn-primary {
@@ -397,7 +406,7 @@ body {
 }
 
 .btn.btn-primary:hover {
-  background-color: #9a0036;
+  background-color: rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 4px -1px RGB(0 0 0/20%), 0px 4px 5px 0px RGB(0 0 0/14%), 0px 1px 10px 0px RGB(0 0 0/12%);
 }
 
@@ -431,7 +440,7 @@ body {
 }
 
 .btn.btn-secondary:hover {
-  background-color: #9a0036;
+  background-color: #c10043;
   box-shadow: 0px 2px 4px -1px RGB(0 0 0/20%), 0px 4px 5px 0px RGB(0 0 0/14%), 0px 1px 10px 0px RGB(0 0 0/12%);
 }
 
@@ -475,6 +484,26 @@ body {
 .btn.btn-lg {
   padding: 1.25rem;
   font-size: 1.25rem;
+}
+
+.index-main {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-main h1 {
+  font-size: 4rem;
+}
+
+.index-main h3 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .main {
