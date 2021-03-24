@@ -22,6 +22,16 @@
     box-shadow: $box-shadow-button-hover;
   }
 
+  &#{&}-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+
+    span {
+      padding: 0 0.5rem;
+    }
+  }
+
   &#{&}-primary {
     background-color: $primary-color;
     color: $white;
@@ -54,6 +64,23 @@
         background-color: $btn-primary-text-hover;
       }
     }
+
+    &-icon {
+      background-color: $primary-color;
+      color: $white;
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+
+      span {
+        padding: 0 0.5rem;
+      }
+
+      &:hover {
+        background-color: $btn-primary-hover;
+        box-shadow: $box-shadow-button-hover;
+      }
+    }
   }
 
   &#{&}-secondary {
@@ -63,6 +90,23 @@
     &:hover {
       background-color: $btn-secondary-hover;
       box-shadow: $box-shadow-button-hover;
+    }
+
+    &-icon {
+      background-color: $secondary-color;
+      color: $white;
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+
+      span {
+        padding: 0 0.5rem;
+      }
+
+      &:hover {
+        background-color: $btn-secondary-hover;
+        box-shadow: $box-shadow-button-hover;
+      }
     }
 
     &-outline {
@@ -106,5 +150,20 @@
   &#{&}-lg {
     padding: 1.25rem;
     font-size: 1.25rem;
+  }
+
+  &#{&}-floating {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+
+    span {
+      font-size: 1.65rem;
+      color: $white;
+    }
   }
 }

@@ -43,46 +43,56 @@
     </header>
     <main class="main">
         <div class="main-topic">
-            <h1>Alert</h1>
-            <h4>An alert displays a short, important message in a way that attracts the user's attention without
-                interrupting
-                the user's task.</h4>
+            <h1>Image</h1>
+            <h4>An image is a graphic representation of something. Images can be made responsive (so that they don't
+                jump
+                out of its parent container), have rounded corners or can look like a circle.</h4>
         </div>
         <div class="main-content">
             <div class="main-content__box">
-                <div class="box-heading">Simple alerts</div>
-                <div class="box-description">The alert offers four severity levels that set a distinctive icon and
-                    color.</div>
-                <div class="alerts">
-                    <div class="alert alert-error">
-                        <span class="material-icons-outlined">
-                            error_outline
-                        </span>
-                        <span>This is an error alert — check it out!</span>
-                    </div>
-                    <div class="alert alert-warning">
-                        <span class="material-icons-outlined">
-                            report_problem
-                        </span>
-                        <span>This is a warning alert — check it out!</span>
-                    </div>
-                    <div class="alert alert-info">
-                        <span class="material-icons-outlined">
-                            info
-                        </span>
-                        <span>This is an info alert — check it out!</span>
-                    </div>
-                    <div class="alert alert-success">
-                        <span class="material-icons-outlined">
-                            task_alt
-                        </span>
-                        <span>This is a success alert — check it out!</span>
-                    </div>
+                <div class="box-heading">Responsive Images</div>
+                <div class="box-description">Images in Bootstrap are made responsive with
+                    <code>.img-responsive. max-width: 100%; </code>
+                    and <code> height: auto; </code> are applied to the image so that it scales with the parent element.
+                </div>
+                <div class="image-container">
+                    <img src="https://plchldr.co/i/300x300?&bg=ccc&fc=424242&text=Responsive Images"
+                        class="img-responsive" alt="Responsive Image">
                 </div>
                 <div class="display-code">
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520error_outline%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%253EThis%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509report_problem%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509info%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509task_alt%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-                        style="width: 416px; height: 497px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522img-responsive%2522%2520alt%253D%2522...%2522%253E"
+                        style="width: 362px; height: 92px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Rounded Corners</div>
+                <div class="box-description">The <code>.img-rounded</code> class adds rounded corners to an image
+                </div>
+                <div class="image-container">
+                    <img src="https://plchldr.co/i/200x200?&bg=ccc&fc=424242&text=Rounded Corners" class="img-rounded"
+                        alt="Rounded Corners">
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522img-rounded%2522%2520alt%253D%2522...%2522%253E"
+                        style="width: 342px; height: 92px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Circle Images</div>
+                <div class="box-description">The <code>.img-circle</code> class shapes the image to a circle
+                </div>
+                <div class="image-container">
+                    <img src="https://plchldr.co/i/200x200?&bg=ccc&fc=424242&text=Circle Image" class="img-circle"
+                        alt="Responsive image">
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522img-circle%2522%2520alt%253D%2522...%2522%253E"
+                        style="width: 335px; height: 92px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>

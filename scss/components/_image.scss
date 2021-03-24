@@ -1,0 +1,20 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img- {
+  &responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &rounded {
+    border-radius: 5px;
+  }
+
+  &circle {
+    border-radius: 50%;
+  }
+}
