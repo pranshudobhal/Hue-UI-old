@@ -1,5 +1,4 @@
 $primary-color: #272727;
-// $secondary-color: #ff652f;
 $secondary-color: #ff3f6c;
 $white: #fff;
 $border-color: #d7d7d7;
@@ -25,8 +24,6 @@ $status-away-color: #f9a61a;
 $status-dnd-color: #f34648;
 $status-dnd-black-color: #212121;
 
-// $badge-number-color: #ff3f6c;
-
 $box-shadow-button: 0px 3px 1px -2px RGB(0 0 0 / 20%), 0px 2px 2px 0px RGB(0 0 0 / 14%), 0px 1px 5px 0px RGB(0 0 0 / 12%);
 $box-shadow-button-hover: 0px 2px 4px -1px RGB(0 0 0 / 20%), 0px 4px 5px 0px RGB(0 0 0 / 14%), 0px 1px 10px 0px RGB(0 0 0 / 12%);
 
@@ -35,3 +32,7 @@ $btn-primary-text-hover: rgba(0, 0, 0, 0.04);
 $btn-secondary-hover: #c10043;
 $btn-secondary-text-hover: rgba(220, 0, 78, 0.04);
 $btn-hover-background: #d5d5d5;
+
+$card-shadow: RGBA(0, 0, 0, 0.24) 0px 3px 8px;
+$card-title-color: RGB(17, 17, 17);
+$card-para-color: RGB(117, 117, 117);

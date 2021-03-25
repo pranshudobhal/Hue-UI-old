@@ -1,11 +1,14 @@
 .button-container {
   display: flex;
   flex-wrap: wrap;
+
+  button {
+    margin: 0.5rem;
+  }
 }
 
 .btn {
   padding: 1rem;
-  margin: 0.5rem;
   border-radius: 5px;
   text-transform: uppercase;
   font-family: inherit;
