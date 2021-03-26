@@ -1,0 +1,42 @@
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+}
+
+.form-control input {
+  border: 0;
+  border-bottom: 2px solid $primary-color;
+  padding: 15px 0;
+  display: block;
+  font-size: 18px;
+  font-family: inherit;
+  width: 100%;
+  transition: 0.1s ease-in;
+  color: $primary-color;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: $secondary-color;
+  outline: none;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: $secondary-color;
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

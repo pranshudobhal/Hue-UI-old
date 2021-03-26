@@ -637,6 +637,182 @@ body {
   padding: 0 0 1rem;
 }
 
+.card.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+}
+
+.card.card-horizontal .card-header {
+  width: 30%;
+}
+
+.card.card-horizontal .card-body {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card.card-horizontal .card-details {
+  padding-left: 1rem;
+}
+
+.card.card-horizontal .card-details button {
+  padding: 0.5rem 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.card.card-horizontal .card-details button::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #272727;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.card.card-horizontal .card-details button:hover:after {
+  width: 100%;
+}
+
+.card.card-horizontal .card-title {
+  color: RGB(17, 17, 17);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.5rem 0 0;
+}
+
+.card.card-horizontal .custom-select {
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: top;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 16px;
+  padding-right: 12px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  color: #757575;
+  z-index: -1;
+}
+
+.card.card-horizontal .custom-select::before {
+  font-family: 'Material Icons';
+  content: '\e5cf';
+  color: #272727;
+}
+
+.card.card-horizontal .custom-select1 {
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: top;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 16px;
+  padding-right: 12px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  color: #757575;
+  z-index: -1;
+}
+
+.card.card-horizontal .custom-select1::before {
+  font-family: 'Material Icons';
+  content: '\e5cf';
+  position: absolute;
+  right: 7.75rem;
+  color: #272727;
+}
+
+.card.card-horizontal .card-text select {
+  padding-left: 0.625rem;
+  height: 100%;
+  width: 100%;
+  padding-right: 2rem;
+  min-height: inherit;
+  font-size: 0.875rem;
+  color: RGB(117, 117, 117);
+  background: none;
+  border: 0px;
+  border-radius: 2px;
+  appearance: none;
+}
+
+.card.card-horizontal .card-text {
+  font-weight: 500;
+  color: RGB(117, 117, 117);
+  font-size: 0.875rem;
+  padding: 0.25rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card.card-horizontal .card-price {
+  font-weight: 500;
+  color: RGB(17, 17, 17);
+  font-size: 0.875rem;
+  padding: 0 0 1rem;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+}
+
+.form-control input {
+  border: 0;
+  border-bottom: 2px solid #272727;
+  padding: 15px 0;
+  display: block;
+  font-size: 18px;
+  font-family: inherit;
+  width: 100%;
+  transition: 0.1s ease-in;
+  color: #272727;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: #ff3f6c;
+  outline: none;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #ff3f6c;
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .index-main {
   display: flex;
   width: 80vw;

@@ -68,4 +68,137 @@
       padding: 0 0 1rem;
     }
   }
+
+  &#{&}-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+
+    .card-header {
+      width: 30%;
+    }
+
+    .card-body {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-details {
+      padding-left: 1rem;
+
+      button {
+        padding: 0.5rem 0;
+        background-color: $white;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          border-bottom: 1px solid $primary-color;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          @include transition-ease;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+
+    .card-title {
+      color: $card-title-color;
+      font-weight: 500;
+      font-size: 0.875rem;
+      padding: 0.5rem 0 0;
+    }
+
+    .custom-select {
+      display: inline-block;
+      font-size: inherit;
+      line-height: inherit;
+      vertical-align: top;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      padding-left: 16px;
+      padding-right: 12px;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      color: rgb(117, 117, 117);
+      z-index: -1;
+
+      &::before {
+        font-family: 'Material Icons';
+        content: '\e5cf';
+        color: $primary-color;
+      }
+    }
+
+    .custom-select1 {
+      display: inline-block;
+      font-size: inherit;
+      line-height: inherit;
+      vertical-align: top;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      padding-left: 16px;
+      padding-right: 12px;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      color: rgb(117, 117, 117);
+      z-index: -1;
+
+      &::before {
+        font-family: 'Material Icons';
+        content: '\e5cf';
+        position: absolute;
+        right: 7.75rem;
+        color: $primary-color;
+      }
+    }
+
+    .card-text select {
+      padding-left: 0.625rem;
+      height: 100%;
+      width: 100%;
+      padding-right: 2rem;
+      min-height: inherit;
+      font-size: 0.875rem;
+      color: $card-para-color;
+      background: none;
+      border: 0px;
+      border-radius: 2px;
+      appearance: none;
+    }
+
+    .card-text {
+      font-weight: 500;
+      color: $card-para-color;
+      font-size: 0.875rem;
+      padding: 0.25rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .card-price {
+      font-weight: 500;
+      color: $card-title-color;
+      font-size: 0.875rem;
+      padding: 0 0 1rem;
+    }
+  }
 }
