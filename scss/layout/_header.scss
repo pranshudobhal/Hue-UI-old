@@ -1,6 +1,15 @@
+// .menu-container {
+//   height: 50px;
+//   width: 100vw;
+//   position: sticky;
+//   top: 0;
+//   background-color: $white;
+//   z-index: 997;
+// }
+
 .menu-btn {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 999;
   right: 1rem;
   top: 1rem;
   height: 20px;
