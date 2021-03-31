@@ -1,3 +1,5 @@
+/* Card Component Styles Start */
+
 .card-container {
   display: flex;
 }
@@ -117,64 +119,48 @@
       padding: 0.5rem 0 0;
     }
 
-    .custom-select {
-      display: inline-block;
-      font-size: inherit;
-      line-height: inherit;
-      vertical-align: top;
-      font-style: normal;
-      font-variant: normal;
+    .select {
       font-weight: 400;
-      text-decoration: none;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      padding-left: 16px;
-      padding-right: 12px;
+      padding: 0 0.75rem 0 1rem;
       position: absolute;
       right: 0;
       text-align: right;
-      color: rgb(117, 117, 117);
+      color: $card-para-color;
       z-index: -1;
+    }
 
+    .custom-select {
       &::before {
         font-family: 'Material Icons';
         content: '\e5cf';
         color: $primary-color;
+        position: absolute;
+        right: -0.25rem;
+
+        @include media-md {
+          right: 0.5rem;
+        }
       }
     }
 
     .custom-select1 {
-      display: inline-block;
-      font-size: inherit;
-      line-height: inherit;
-      vertical-align: top;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      text-decoration: none;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      padding-left: 16px;
-      padding-right: 12px;
-      position: absolute;
-      right: 0;
-      text-align: right;
-      color: rgb(117, 117, 117);
-      z-index: -1;
-
       &::before {
         font-family: 'Material Icons';
         content: '\e5cf';
         position: absolute;
-        right: 7.75rem;
+        right: 6.75rem;
         color: $primary-color;
+
+        @include media-md {
+          right: 7.5rem;
+        }
       }
     }
 
     .card-text select {
       padding-left: 0.625rem;
       height: 100%;
-      width: 100%;
+      width: max-content;
       padding-right: 2rem;
       min-height: inherit;
       font-size: 0.875rem;
@@ -203,3 +189,11 @@
     }
   }
 }
+
+@include media-md {
+  div.card-text {
+    width: 70%;
+  }
+}
+
+/* Card Component Styles End */

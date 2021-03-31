@@ -1,15 +1,10 @@
 @import 'utilities/variables';
-@import 'utilities/functions';
 @import 'utilities/mixins';
 
 @import 'base/reset';
-@import 'base/typography';
 
-// @import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-// @import 'layout/sidebar';
-// @import 'layout/forms';
+@import 'layout/content';
+@import 'layout/sidenav';
 
 @import 'components/avatar';
 @import 'components/alert';
@@ -23,11 +18,3 @@
 @import 'components/utilities';
 
 @import 'pages/index';
-@import 'pages/getting-started';
-@import 'pages/avatar-page';
-@import 'pages/alert-page';
-@import 'pages/badge-page';
-@import 'pages/button-page';
-@import 'pages/image-page';
-
-// @import 'theme/theme';

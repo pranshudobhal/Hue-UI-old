@@ -1,25 +1,27 @@
+/* Input Component Styles Start */
+
 .form-control {
   position: relative;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   width: 300px;
 }
 
 .form-control input {
   border: 0;
   border-bottom: 2px solid $primary-color;
-  padding: 15px 0;
+  padding: 1rem 0;
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: inherit;
   width: 100%;
-  transition: 0.1s ease-in;
+  @include transition-ease;
   color: $primary-color;
 }
 
 .form-control input:focus,
 .form-control input:valid {
   border-bottom-color: $secondary-color;
-  outline: none;
+  outline: 0px solid $white;
 }
 
 .form-control input:focus + label span,
@@ -30,13 +32,15 @@
 
 .form-control label {
   position: absolute;
-  top: 15px;
+  top: 1rem;
   left: 0;
 }
 
 .form-control label span {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   min-width: 5px;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/* Input Component Styles End */

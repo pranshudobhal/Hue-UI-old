@@ -1,7 +1,12 @@
-//input
 const inputs = document.querySelectorAll('.form-control input');
 const labels = document.querySelectorAll('.form-control label');
+var modal = document.querySelector('.modal');
+var modalButton = document.getElementById('modal-button');
+var modalClose = document.querySelector('.modal-close');
+var modalCancel = document.querySelector('#cancel');
+var modalDelete = document.querySelector('#delete');
 
+//Handling input animation
 labels.forEach((label) => {
   label.innerHTML = label.innerText
     .split('')
@@ -13,16 +18,16 @@ labels.forEach((label) => {
     .join('');
 });
 
-//modal
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('myBtn');
-var span = document.getElementsByClassName('close')[0];
-
-btn.onclick = function () {
+//Handling modal functionality
+modalButton.onclick = function () {
   modal.style.display = 'flex';
 };
 
-span.onclick = function () {
+modalClose.onclick = function () {
+  modal.style.display = 'none';
+};
+
+modalCancel.onclick = function () {
   modal.style.display = 'none';
 };
 

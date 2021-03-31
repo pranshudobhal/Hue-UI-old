@@ -1,3 +1,5 @@
+/* Modal Component Styles Start */
+
 .modal {
   display: none;
   position: fixed;
@@ -18,23 +20,58 @@
   padding: 1.25rem;
   position: relative;
   border: 1px solid $grey;
-  width: 80%;
+  width: 60%;
   height: auto;
   max-width: 400px;
   animation-name: animatetop;
   animation-duration: 0.4s;
+  display: flex;
+  flex-direction: column;
 }
 
-.close {
-  color: $grey;
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  font-size: 2rem;
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+
+  span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .modal-close {
+    color: $grey;
+    font-size: 3rem;
+
+    @include media-md {
+      font-size: 2rem;
+    }
+  }
 }
 
-.close:hover,
-.close:focus {
+.modal-description {
+  margin-bottom: 2rem;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    margin-left: 0.5rem;
+    width: 50%;
+
+    @include media-md {
+      margin-left: 1rem;
+      width: 25%;
+    }
+  }
+}
+
+.modal-close:hover,
+.modal-close:focus {
   color: $primary-color;
   text-decoration: none;
   cursor: pointer;
@@ -50,3 +87,5 @@
     opacity: 1;
   }
 }
+
+/* Modal Component Styles End */

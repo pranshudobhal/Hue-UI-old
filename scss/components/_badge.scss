@@ -1,3 +1,5 @@
+/* Badge Component Styles Start */
+
 .badge {
   position: relative;
   display: flex;
@@ -77,67 +79,4 @@
   }
 }
 
-//run if above code isn't working
-
-// &icons{
-//   display: flex;
-//   justify-content: flex-start;
-//   margin: 0 auto;
-// }
-// &container {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-self: flex-end;
-//   text-align: center;
-//   margin-right: 1rem;
-// }
-
-// .badge-container {
-//   position: relative;
-// }
-
-// .badge-avatar {
-//   width: 20%;
-//   height: 20%;
-//   position: absolute;
-//   border-radius: 50%;
-//   border: 2px solid $white;
-//   bottom: 4%;
-//   right: 6%;
-
-//   &.status- {
-//     &online {
-//       background-color: $status-online;
-//     }
-
-//     &away {
-//       background-color: $status-away;
-//       &::after {
-//         content: '';
-//         position: absolute;
-//         width: 55%;
-//         height: 55%;
-//         background-color: $white;
-//         border-radius: 50%;
-//         top: 0;
-//         left: 0;
-//       }
-//     }
-
-//     &dnd {
-//       background-color: $status-dnd;
-//       &::after {
-//         content: '';
-//         position: absolute;
-//         width: 65%;
-//         height: 20%;
-//         background-color: $status-dnd-black;
-//         border-radius: 2px;
-//         top: 45%;
-//         left: 15%;
-//       }
-//     }
-//   }
-// }
+/* Badge Component Styles End */

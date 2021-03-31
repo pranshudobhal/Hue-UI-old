@@ -1,7 +1,25 @@
+/* Avatar Component Styles Start */
+
+.avatar-sizes {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    text-align: center;
+    margin-right: 1rem;
+  }
+}
+
 .avatar {
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
+  object-fit: cover;
 
   &#{&}-sm {
     height: 4rem;
@@ -18,3 +36,5 @@
     width: 8rem;
   }
 }
+
+/* Avatar Component Styles End */

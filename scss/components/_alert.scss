@@ -1,3 +1,11 @@
+/* Alert Component Styles Start */
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .alert {
   border-radius: 5px;
   display: flex;
@@ -48,3 +56,5 @@
     }
   }
 }
+
+/* Alert Component Styles End */
